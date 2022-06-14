@@ -1,0 +1,25 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>quadro_x</title>
+</head>
+    <body>
+        <h1>Вычсление корня квадратного уравнения <i>ax<sup>2</sup></i> + <i>bx</i> + <i>c</i></h1>
+
+        <form method="POST" action=''>
+            {% csrf_token %}
+            <div>a= <input type='text' name='a'></div>
+            <div>b= <input type='text' name='b'></div>
+            <div>c= <input type='text' name='c'></div>
+            <hr></hr>
+            <input type="submit" value="Рассчитать">
+        </form>
+        <h2>Вывод результата</h2>
+        <div>{{ my_x }}</div>
+        <div>{{ my_x_1 }}</div>
+        <div>{{ my_x_2 }}</div>
+    </body>
+</html>
