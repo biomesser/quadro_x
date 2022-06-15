@@ -12,8 +12,8 @@ def quadro_abc(a, b, c):
         my_x = -b / (2*a)
         return str('Дискриминант = 0, X =', int(my_x))
     if discriminant > 0:
-        my_x_1 = (-b + sqrt(discriminant)) / 2*a
-        my_x_2 = (-b - sqrt(discriminant)) / 2*a
+        my_x_1 = (-b + sqrt(discriminant)) / (2*a)
+        my_x_2 = (-b - sqrt(discriminant)) / (2*a)
         return str('Дискриминант > 0, уравнение имеет два решения:  ' + 'X = ' + str(int(my_x_1)) + ' и ' + 'X = ' + str(int(my_x_2)))
 
 def about(request):
